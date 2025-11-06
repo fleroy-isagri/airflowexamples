@@ -1,5 +1,5 @@
 from airflow.decorators import task, dag
-from airflow.operators.dummy import DummyOperator
+from airflow.providers.standard.operators.empty import EmptyOperator
 from airflow.operators.bash import BashOperator
 from datetime import datetime
 import pandas as pd
